@@ -1,0 +1,11 @@
+// app global css in SCSS form
+@import "./include/_reset";
+@import "./include/_font";
+@import "./include/_typo";
+@import "./include/_color";
+@import "./include/_btn";
+@import "./include/_boxed";
+
+html,body{
+  font-family: "lexend", sans-serif;
+}

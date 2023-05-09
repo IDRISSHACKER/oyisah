@@ -1,0 +1,112 @@
+$primary: #3b1079;
+$secondary: rgb(0, 105, 255);
+$black: rgb(7, 28, 74);
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+  --black: rgb(7, 28, 74)
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html,body{
+  color: $black;
+  font-family: 'Lexend', sans-serif;
+  --primary: #3b1079;
+  --secondary: rgb(0, 105, 255);
+}
+
+::-webkit-scrollbar{
+  width: 7px;
+  transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) all  0.3s;
+  animation: showIn 0.3s ease-in;
+}
+
+::-webkit-scrollbar-track{
+  background: transparent;
+  padding: 1px;
+  transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) all  0.3s;
+  animation: showIn 0.3s ease-in;
+}
+
+::-webkit-scrollbar-thumb{
+  border-radius: 4px;
+  transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) all  0.3s;
+  animation: showIn 0.3s ease-in;
+}
+
+.container{
+  max-width: 1200px;
+  margin: auto;
+
+  @media only screen and(max-width: 1320px) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  @media only screen and(max-width: 500px) {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+
+main{
+  //background: url("https://1-213-11564-2.b.cdn13.com//uploads/cache/cover_thumb/uploads/png/75e85653fe81111140493a5dbf4c88dc.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  .bg{
+    background: url("https://maitre-des-fleurs.com/images/lcd_overlay.png");
+    background-size: cover;
+    background-attachment: fixed;
+
+    .bg-color{
+     // --tw-bg-opacity: 1;
+      //background-color: rgb(49 46 129 / var(--tw-bg-opacity));
+    }
+  }
+
+}
+
+.logo{
+  height: 50px;
+}
