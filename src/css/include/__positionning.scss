@@ -1,0 +1,32 @@
+@import "quasar/src/css/variables";
+
+$widXl: 1720;
+$widLg: 1500;
+$widMd: 1100;
+$widSm: 720;
+$widXs: 540;
+.container {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+
+  @media only screen and(min-width: $breakpoint-xl-min) {
+    max-width: 1520px;
+  }
+  @media only screen and(max-width: $breakpoint-lg-max) {
+    max-width: 1340px;
+  }
+  @media only screen and(max-width: $breakpoint-md-max) {
+    max-width: 1100px;
+  }
+  @media only screen and (max-width: $breakpoint-sm-max) {
+    max-width: 920px;
+  }
+  @media only screen and(max-width: $breakpoint-xs-max) {
+    max-width: 540px;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
